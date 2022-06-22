@@ -1,0 +1,50 @@
+<div class="container ">
+    <div class="row ">
+        <div class="col-md-12 text-center">
+            <div class="card mt-3 mb-3">
+            <div class="card-header text-center">
+                 <h1 class="displat-5 fw-bold myHeader">WELCOME TO ONLINE TEST APPLICATION</h1>
+            </div>
+            <div class="card-body">
+                <p class="col-md-12 fs-4">
+                    The quiz will include 10 questions containing 5 marks each .
+                    You have to attempt every question .
+                    <br>
+                             <b class="text-center">All the best for your test !!</b>
+                </p>
+
+            </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="row ">
+        <form [formGroup]="myReactiveForm" (ngSubmit)="onSubmit(myReactiveForm)">
+        <div class="name col-md-4">
+            <label for="username ">Enter your name to start the quiz:-</label>
+
+    
+        <div class="form-group">
+            <label for="name">Name </label>
+            <input type="text" class="form-control" formControlName="name" placeholder="Enter name !" >
+            <div class="alert alert-danger" role="alert" *ngIf="myReactiveForm.get('name').invalid && (myReactiveForm.get('name') || myReactiveForm.get('name').dirty)">
+               Please provide the name !!
+            </div> 
+
+        </div>
+        <div class="form-group">
+            <label for="email">Email </label>
+            <input type="text" class="form-control" formControlName="email" placeholder="Enter email !" >
+            <div class="alert alert-danger" role="alert" *ngIf="myReactiveForm.get('email').invalid && (myReactiveForm.get('email') || myReactiveForm.get('email').dirty)">
+               Please provide the email !!
+            </div>
+
+        </div>
+  
+        <button type="submit" class="btn btn-primary mt-3 " [disabled]="myReactiveForm.invalid">Submit</button>
+   
+    </div>
+</form>
+    </div>
+
+</div>

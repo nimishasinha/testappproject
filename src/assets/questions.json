@@ -1,0 +1,61 @@
+{
+
+    "questions":[
+        {
+            "questionText":"Does angular support two-way binding ?",
+            "options":[{"text":"Yes","correct":"true"},
+            {"text":"No"}]
+        },
+        {
+            "questionText":"Which of the following is not a valid pipe in angular ?",
+            "options":[{"text":"currency"},
+            {"text":"JSON"},
+            {"text":"Date"},
+            {"text":"XML","correct":"true"}
+                      ]
+        },
+        {
+            "questionText":"Is angular SPA?",
+            "options":[{"text":"Yes","correct":"true"},
+            {"text":"No"}]
+        },
+        {
+            "questionText":"In Angular, you can pass data from the parent component to the child component by using:",
+            "options":[{"text":"@Output"},
+            {"text":"@Input","correct":"true"},
+            {"text":"Output"},
+            {"text":"Input"}
+                      ]
+        },
+        {
+            "questionText":"In Angular routing, which tag is used to render matched component via active route?",
+            "options":[{"text":"<router></router>"},
+            {"text":"<router-output></router-output>"},
+            {"text":"<router-outlet></router-outlet>","correct":"true"},
+            {"text":"<router-display></router-display>"}
+                      ]
+        },
+        {
+            "questionText":"Which of the following filter is used to convert an input string to date format.",
+            "options":[{"text":"dateformat"},
+            {"text":"date","correct":"true"},
+            {"text":"Both of the above"},
+            {"text":"None of the above"}
+                      ]
+        },
+        {
+            "questionText":"Which directive connects the value of the controls to the data?",
+            "options":[{"text":"ng-app"},
+            {"text":"ng-init"},
+            {"text":"ng-modal","correct":"true"}
+            
+                      ]
+        },
+        {
+            "questionText":"Which directive modifies DOM hierarchy?",
+            "options":[{"text":"Structural directive","correct":"true"},
+            {"text":"Attribute directive"}]
+        }
+
+    ]
+}
